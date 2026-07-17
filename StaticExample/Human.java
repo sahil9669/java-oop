@@ -17,7 +17,7 @@ public class Human {
         this.name=name;
         this.salary=salary;
         this.married=married;
-        // this.population+=1; -->  works but not a good practice
+        // this.population+=1; -->  "this" keyword works but not a good practice
         Human.population+=1; 
         //-->this is correct 
         // static variables are must accessed with class name

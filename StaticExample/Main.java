@@ -3,8 +3,8 @@ package StaticExample;
 public class Main {
     public static void main(String[] args) {
         // Human sahil=new Human(23,"Sahil",5000000,false);
-        // Human kunal=new Human(23,"Sahil",5000000,false);
-        // Human Gana=new Human(23,"Sahil",5000000,false);
+        // Human kunal=new Human(24,"Kunal",7000000,true);
+        // Human Gana=new Human(23,"Gana",9000000,false);
         
         System.out.println(Human.population);
         // static variables do not depend on object hence we can access them with class name and even before object is created
@@ -16,12 +16,13 @@ public class Main {
 
         fun();
 
-        Main funn=new Main();
-        funn.fun2();
+        Main obj=new Main();
+        obj.fun2();
         // for above we have fun2() method which is non-static 
         // inside it there is  non-static method message()
         // when we create object for outer method we do not need to create object for inside methods 
         // the object of outer method will take care of it
+        obj.message();
 
         
     }
@@ -34,7 +35,7 @@ public class Main {
 
         Main obj=new Main();
         obj.greeting();
-        // now this is accessible bcoz we have created and instance now
+        // this is accessible bcoz we have created an instance now
 
     }
 
@@ -47,7 +48,7 @@ public class Main {
     }
 
     void greeting(){
-        System.out.println("Hello Non_Static ");
+        System.out.println("Hello Non_Static greeting");
         // fun(); --> we can access static inside non-static methods
     }
 }

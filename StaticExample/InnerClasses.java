@@ -1,12 +1,13 @@
 package StaticExample;
 // static class Test{} *** V.IMP ***
-// Static classes can not be declared outside since they are dependent on parent non-static class
+// static classes can not be declared outside since they are dependent on parent non-static class
+
 class Test{
     static String name;
 
     public Test(String name){
         // this.name=name;
-        Test.name=name;
+        this.name=name;
         // name is a static variable hence it is accessed with class name
     }
 }
@@ -26,9 +27,10 @@ public class InnerClasses {
         }
     }
 
+
     public static void main(String[] args) {
-        Test soil=new Test("Soil");// without static keyword this will throw error
-        Test sahil=new Test("Sahil");// without static keyword this will throw error
+        Test soil=new Test("Soil");
+        Test sahil=new Test("Sahil");
 
         System.out.println(soil.name);// Test.name
         System.out.println(sahil.name);// Test.name
@@ -37,8 +39,8 @@ public class InnerClasses {
         Test2 kunal=new Test2("Kunal");
         Test2 rev=new Test2("rev");
 
-        System.out.println(kunal.name);
-        System.out.println(rev.name);
+        System.out.println(kunal.name); // output=>kunal
+        System.out.println(rev.name); // output=>rev
 
         System.out.println(kunal);// override toString() method
     }
