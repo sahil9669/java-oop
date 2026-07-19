@@ -1,4 +1,4 @@
-package StaticExample;
+package staticExample;
 
 public class Human {
     int age;

@@ -1,4 +1,4 @@
-package StaticExample;
+package staticExample;
 // static class Test{} *** V.IMP ***
 // static classes can not be declared outside since they are dependent on parent non-static class
 

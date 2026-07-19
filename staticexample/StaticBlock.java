@@ -1,4 +1,4 @@
-package StaticExample;
+package staticExample;
 
 public class StaticBlock {
     static int a=4;

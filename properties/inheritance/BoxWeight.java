@@ -1,4 +1,4 @@
-package Properties.inheritance;
+package properties.inheritance;
 
 public class BoxWeight extends Box {
     public double weight;
