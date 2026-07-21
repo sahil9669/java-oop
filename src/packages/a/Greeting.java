@@ -1,3 +1,4 @@
+package packages.a;
 import static packages.b.Message.message;
 import packages.b.Show;
 
