@@ -1,4 +1,4 @@
-package polymorphism;
+package properties.polymorphism;
 
 public class Triangle extends Shapes{
     void area(){

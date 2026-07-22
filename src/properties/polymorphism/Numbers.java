@@ -1,4 +1,4 @@
-package polymorphism;
+package properties.polymorphism;
 
 public class Numbers {
 
